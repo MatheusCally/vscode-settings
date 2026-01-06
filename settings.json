@@ -291,7 +291,7 @@
     "window.menuBarVisibility": "compact",
     "window.titleBarStyle": "native",
     "workbench.colorTheme": "Tokyo Night",
-    "workbench.startupEditor": "none",
+    "workbench.startupEditor": "terminal",
     "workbench.view.showQuietly": {
         "workbench.panel.output": true
     },

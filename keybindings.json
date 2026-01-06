@@ -241,7 +241,7 @@
     // "command": "runCommands",
     // "args": {
     //   "commands": [
-    //     "workbench.view.scm",
+    //     "workbench.scm.focus",
     //     "list.focusFirst"
     //   ]
     // }

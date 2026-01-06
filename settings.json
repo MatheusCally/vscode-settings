@@ -17,7 +17,8 @@
         "<C-b>": false,
         "<S-h>": false,
         "<S-l>": false,
-        "<C-i>": false
+        "<C-i>": false,
+        "<C-n>": false
     },
     "vim.easymotion": true,
     "vim.incsearch": true,
@@ -151,11 +152,30 @@
         {
             "before": [
                 "<leader>",
+                "f",
+                "h"
+            ],
+            "commands": [
+                "editor.action.startFindReplaceAction"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "s"
+            ],
+            "commands": [
+                "actions.find"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "g",
                 "g"
             ],
             "commands": [
-                "workbench.view.scm",
                 "workbench.scm.focus"
             ]
         },

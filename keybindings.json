@@ -1,86 +1,87 @@
 // Place your key bindings in this file to override the defaults
 [
-    {
-        "key": "ctrl+shift+/",
-        "command": "fzf-quick-open.runFzfFileProjectRoot"
-    },
-    {
-        "key": "ctrl+alt+/",
-        "command": "fzf-quick-open.runFzfSearchProjectRoot"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled"
-    },
-    {
-        "key": "ctrl+shift+e",
-        "command": "-workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled"
-    },
-    {
-        "key": "ctrl+down",
-        "command": "terminal.focus"
-    },
-    {
-        "key": "ctrl+/",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
-    {
-        "key": "ctrl+shift+[BracketLeft]",
-        "command": "-workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
-    // Terminal Navigation
-    {
-        "key": "shift+k",
-        "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "shift+j",
-        "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "workbench.action.terminal.new",
-        "when": "terminalFocus || terminalProcessSupported"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "alt+space",
-        "command": "whichkey.show",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "-workbench.action.showAllSymbols"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "-vscode-neovim.send-cmdline",
-        "when": "neovim.init && neovim.mode == 'cmdline'"
-    },
-    {
-        "key": "ctrl+w g",
-        "command": "workbench.action.closeEditorsInGroup",
-        "when": "editorTextFocus"
-    },{
-        "key": "ctrl+t",
-        "command": "-vscode-neovim.send",
-        "when": "editorTextFocus && neovim.ctrlKeysNormal.t && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "-vscode-neovim.send",
-        "when": "editorTextFocus && neovim.ctrlKeysInsert.t && neovim.init && neovim.mode == 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
-    },
+  {
+    "key": "ctrl+shift+/",
+    "command": "fzf-quick-open.runFzfFileProjectRoot"
+  },
+  {
+    "key": "ctrl+alt+/",
+    "command": "fzf-quick-open.runFzfSearchProjectRoot"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "terminal.focus"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+shift+[BracketLeft]",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  // Terminal Navigation
+  {
+    "key": "shift+k",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+j",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus || terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+space",
+    "command": "whichkey.show",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-vscode-neovim.send-cmdline",
+    "when": "neovim.init && neovim.mode == 'cmdline'"
+  },
+  {
+    "key": "ctrl+w g",
+    "command": "workbench.action.closeEditorsInGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-vscode-neovim.send",
+    "when": "editorTextFocus && neovim.ctrlKeysNormal.t && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-vscode-neovim.send",
+    "when": "editorTextFocus && neovim.ctrlKeysInsert.t && neovim.init && neovim.mode == 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
 
 
 
@@ -184,6 +185,35 @@
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
+    "key": "ctrl+n",
+    "command": "extension.advancedNewFile"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "git.stage",
+    "when": "activeViewlet == 'workbench.view.scm' && sideBarFocus"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "git.stageAll",
+    "when": "activeViewlet == 'workbench.view.scm' && sideBarFocus"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "git.unstage",
+    "when": "activeViewlet == 'workbench.view.scm' && sideBarFocus"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "git.commitAllSigned",
+    "when": "activeViewlet == 'workbench.view.scm' && sideBarFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "git.push",
+    "when": "activeViewlet == 'workbench.view.scm' && sideBarFocus"
+  },
+  {
     "key": "shift-s",
     "command": "runCommands",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
@@ -204,5 +234,16 @@
     "key": "enter",
     "command": "list.toggleExpand",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.scm.focus"
+    // "command": "runCommands",
+    // "args": {
+    //   "commands": [
+    //     "workbench.view.scm",
+    //     "list.focusFirst"
+    //   ]
+    // }
   }
 ]
